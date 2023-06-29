@@ -80,7 +80,7 @@ for (nyccd.url in nyccd.urls) {
   
   
     con <- DBI::dbConnect(RPostgres::Postgres(), dbname='gis', host='localhost', 
-                          port=5432, user='postgres', password='farmlove')
+                          port=5432, user='postgres', password='xxxxx')
     
     qry <- paste("SELECT way FROM new_york_osm_line WHERE way && ST_MakeEnvelope(",
                  bbox[1],',',
